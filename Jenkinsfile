@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('git pull') {
       steps {
-        // https://github.com/jungmsms/GitOps.git will replace by sed command before RUN
+        // Git-URL will replace by sed command before RUN
         git url: 'https://github.com/jungmsms/GitOps.git', branch: 'main'
       }
     }
